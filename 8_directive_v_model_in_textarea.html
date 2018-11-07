@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directive v-model textarea</title>
+</head>
+<body>
+    
+    <!-- inspect elemen v-text -->
+    <div id="app">
+        <input type="text" name="" v-model="message">
+        <br />
+        <p>{{ message  }}</p>
+        <textarea cols="30" rows="10" v-model="textarea">
+        </textarea>
+        <br />
+        <p style="white-space: pre-line"> {{ textarea  }}  </p>
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app8.js"></script>
+</body>
+</html>
+

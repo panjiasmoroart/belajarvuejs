@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directive v-on for event handler</title>
+</head>
+<body>
+
+    <div id="app">
+        <label for="">Press Enter Key</label> 
+        <input type="text" 
+        v-on:keyup.enter="message = 'your pressing enter key'">
+        <br /><br />
+
+        <label for="">Press Any Key</label>
+        <input type="text"
+        @keyup.esc="escKey" 
+        @keyup.space="spaceKey"
+        @keyup.up="upKey"
+        @keyup.down="downKey"
+        @keyup.65="aKey">
+
+        <br />
+        <p><strong>{{ message }}</strong></p>
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app14.js"></script>
+</body>
+</html>
+
+
+
+

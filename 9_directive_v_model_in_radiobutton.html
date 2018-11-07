@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directive v-model radiobutton</title>
+</head>
+<body>
+
+    <h3>Form vuejs</h3>    
+    <!-- inspect elemen v-text -->
+    <div id="app">
+        <input type="text" name="" v-model="message">
+        <br />
+        <p>{{ message  }}</p>
+        <textarea cols="30" rows="10" v-model="textarea">
+        </textarea>
+        <br />
+        <p style="white-space: pre-line"> {{ textarea  }}  </p>
+        <input type="radio" v-model="radiobutton" value="option-1"> Option 1
+        <br />
+        <input type="radio" v-model="radiobutton" value="option-2"> Option 2
+        <br />
+        <p>Your choice is : {{ radiobutton }}</p>
+
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app9.js"></script>
+</body>
+</html>
+

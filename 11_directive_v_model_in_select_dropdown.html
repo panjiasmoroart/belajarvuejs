@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directive v-model select</title>
+</head>
+<body>
+
+    <h3>Form vuejs</h3>    
+    <!-- inspect elemen v-text -->
+    <div id="app">
+        <input type="text" name="" v-model="message">
+        <br />
+        <p>{{ message  }}</p>
+        <textarea cols="30" rows="10" v-model="textarea">
+        </textarea>
+        <br />
+        <p style="white-space: pre-line"> {{ textarea  }}  </p>
+        <input type="radio" v-model="radiobutton" value="option-1"> Option 1
+        <br />
+        <input type="radio" v-model="radiobutton" value="option-2"> Option 2
+        <br />
+        <p>Your choice is : {{ radiobutton }}</p>
+        <label>Watching Movie</label>
+        <input type="checkbox" value="watching-movie" v-model="checkbox">
+        <br />
+        <label>Traveling</label>
+        <input type="checkbox" value="traveling" v-model="checkbox">
+        <br />
+        <label>Reading Book</label>
+        <input type="checkbox" value="reading-book" v-model="checkbox">
+        <br />
+        <p>My hobbies are : {{ checkbox }}</p>
+        <ul>
+            <li v-for="choice in checkbox">{{ choice }}</li>
+        </ul>
+        <br />
+        Choice your favorite programming language :
+        <select v-model="select" multiple>
+            <option value="" disabled>Choice Programming Language</option>
+            <option value="java">Java</option>
+            <option value="ruby">Ruby</option>
+            <option value="php">PHP</option>
+        </select>
+        <br />
+        <p>My favorite programming language is : {{ select }}</p>
+        <ul>
+            <li v-for="sel in select">{{ sel }}</li>
+        </ul>
+
+
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app11.js"></script>
+</body>
+</html>
+
+

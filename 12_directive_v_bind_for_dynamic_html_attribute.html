@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directive v-bind for dynamic html</title>
+</head>
+<body>
+
+    <div id="app">
+        <img v-bind:src="imgFile" alt="Belum Tersedia">
+        <br />
+        <a v-bind:href="link" target="_blank">About Page</a>
+        <br />
+        <!-- <p v-bind:style="{color: colorFont}">Red Font</p>-->
+        <p v-bind:style="styleFont">Red Font</p>
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app12.js"></script>
+</body>
+</html>
+
+

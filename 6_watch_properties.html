@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watch properties</title>
+</head>
+<body>
+    
+    <!-- inspect elemen v-text -->
+    <div id="app">
+        <p v-if="show">{{ message  }}</p>
+        <p v-else="show">{{ message2  }}</p>
+        <p>Penjumlahan dari {{ int1 }} + {{ int2 }} adalah {{ result }}</p>
+        <button v-on:click="sumProcess(2)">Process</button>
+        
+        <input type="text" name="" v-model="kilometers" /> KM
+        <input type="text" name="" v-model="meters" /> M
+    
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app6.js"></script>
+</body>
+</html>
+

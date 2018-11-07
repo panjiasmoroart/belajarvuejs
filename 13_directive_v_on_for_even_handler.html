@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directive v-on for event handler</title>
+</head>
+<body>
+
+    <div id="app">
+        <button v-on:click="message = 'the button has been clicked using v-on:click'">
+            Click 
+        </button>
+
+        <button @click="message = 'the button has been clicked using @click'">
+            Click Me!
+        </button>
+
+        <button @click="showAlert">
+            Show Alert!
+        </button>
+
+        <br />
+
+        <p> {{ message }} </p>
+
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app13.js"></script>
+</body>
+</html>
+
+
+

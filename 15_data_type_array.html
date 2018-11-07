@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Array Type</title>
+</head>
+<body>
+
+    <div id="app">
+        <ul>
+            <li>{{ vehicles[0] }}</li>
+        </ul>
+        <br />
+        <ul>
+            <li v-for="vehicle in vehicles">{{ vehicle  }}</li>
+        </ul>
+        <br />
+
+        <label for="">Add Vehicles</label><br />
+        <input type="text" v-model="content"><button @click="addVehicle">Add</button>
+
+        <br />
+        <ul>
+            <li v-for="(vehicle, index) in vehicles">
+                <button @click="removeVehicle(index)">x</button>
+                {{ vehicle }}
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app15.js"></script>
+</body>
+</html>
+
+
+
+
+

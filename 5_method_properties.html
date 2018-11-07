@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Method properties</title>
+</head>
+<body>
+    
+    <!-- inspect elemen v-text -->
+    <div id="app">
+        <p v-if="show">{{ message  }}</p>
+        <p v-else="show">{{ message2  }}</p>
+        <p>Penjumlahan dari {{ int1 }} + {{ int2 }} adalah {{ result }}</p>
+        <button v-on:click="sumProcess(2)">Process</button>
+    </div>
+
+    <script type="text/javascript" src="assets/vendor/vue.js"></script>
+    <script type="text/javascript" src="assets/js/app5.js"></script>
+</body>
+</html>
